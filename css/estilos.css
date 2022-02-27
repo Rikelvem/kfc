@@ -1,0 +1,97 @@
+:root {
+    --vermelho: #d10a20;
+    --vermelho-2: #f0483a;
+    --branco: #f2f2f2;
+    --cinza: #333333;
+
+    --font: 'Ubuntu', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    background: radial-gradient(var(--vermelho-2), var(--vermelho));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 100px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    max-width: 90px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    position: relative;
+    color: var(--branco);
+    margin-left: 40px;
+}
+
+.conteudo {
+    position: relative;
+    width: 100%;
+}
+
+.conteudo .texto {
+    width: 100%;
+    max-width: 620px;
+}
+
+.conteudo .texto h2 {
+    color: var(--branco);
+    font-size: 5em;
+    font-weight: 300;
+}
+
+.conteudo .texto h2 span {
+    font-weight: 700;
+}
+
+.conteudo .texto p {
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 20px 0px;
+}
+
+.conteudo .texto p span {
+    font-weight: 700;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 20px 50px;
+    background: var(--branco);
+    color: var(--cinza);
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 40px;
+}
